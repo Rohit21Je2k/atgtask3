@@ -45,11 +45,6 @@ body {
   background: #e5e5e5;
 }
 
-/* main form */
-.main-form {
-  width: 500px;
-}
-
 /* icons */
 .icon-person {
   background: url("./icon.svg");
