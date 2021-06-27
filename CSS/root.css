@@ -1,0 +1,294 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+@import url("./helper.css");
+
+:root {
+  /* colors */
+  --primary: #0066ff;
+  --success: #48b527;
+  --warning: #ffb649;
+  --danger: #ff3a30;
+
+  /* gray colors */
+  --gray-1: rgba(255, 255, 255, 1);
+  --gray-2: rgba(250, 250, 250, 1);
+  --gray-3: rgba(245, 245, 245, 1);
+  --gray-5: rgba(217, 217, 217, 1);
+  --gray-6: rgba(191, 191, 191, 1);
+  --gray-7: rgba(140, 140, 140, 1);
+  --gray-9: rgba(38, 38, 38, 1);
+
+  /* blue colors */
+  --blue-6: rgba(24, 144, 255, 1);
+  --blue-5: rgba(64, 169, 255, 1);
+  --blue-7: rgba(9, 109, 217, 1);
+}
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+  offset-position: top;
+}
+
+*,
+*::before,
+*::after {
+  font-family: Roboto;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-weight: 300;
+  line-height: 1.3;
+  background: #e5e5e5;
+}
+
+/* main form */
+.main-form {
+  width: 500px;
+}
+
+/* icons */
+.icon-person {
+  background: url("./icon.svg");
+}
+
+/* position */
+.pos-rel {
+  position: relative;
+}
+
+.pos-abs {
+  position: absolute;
+}
+
+/* margin */
+.mr-10 {
+  margin-right: 10px;
+}
+
+.mt-50 {
+  margin-top: 50px;
+}
+
+/* padding */
+.p-lg {
+  padding: 8px 12px;
+}
+
+.p-10 {
+  padding: 10px;
+}
+
+/* background */
+.bg-none {
+  background: none;
+}
+
+.bg-xc {
+  background-position-x: center;
+}
+
+.bg-x-10 {
+  background-position-x: 10px;
+}
+
+.bg-yc {
+  background-position-y: center;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
+}
+
+.bg-s-14 {
+  background-size: 14px;
+}
+
+.bg-s-12 {
+  background-size: 12px;
+}
+
+.bg-g-1 {
+  background-color: var(--gray-1);
+}
+
+.bg-g-2 {
+  background-color: var(--gray-2);
+}
+
+.bg-b-5 {
+  background-color: var(--blue-5);
+}
+
+.bg-b-6 {
+  background-color: var(--blue-6);
+}
+
+.bg-b-7 {
+  background-color: var(--blue-7);
+}
+
+/* border */
+.br-2 {
+  border-radius: 2px;
+}
+
+.b-default {
+  border: 1px solid var(--gray-5);
+}
+
+.b-dashed {
+  border: 1px dashed var(--gray-5);
+}
+
+/* colors */
+.c-g-1 {
+  color: var(--gray-1);
+}
+
+.c-g-9 {
+  color: var(--gray-9);
+}
+
+.c-b-6 {
+  color: var(--blue-6);
+}
+
+/* font weight */
+.wgt-300 {
+  font-weight: 300;
+}
+
+.wgt-400 {
+  font-weight: 400;
+}
+
+.wgt-500 {
+  font-weight: 500;
+}
+
+.wgt-700 {
+  font-weight: 700;
+}
+
+/* font size */
+.fnt-12 {
+  font-size: 12px;
+}
+
+.fnt-14 {
+  font-size: 14px;
+}
+
+.fnt-16 {
+  font-size: 16px;
+}
+
+/* input */
+.input {
+  outline: none;
+}
+
+.input::placeholder {
+  color: var(--gray-7);
+}
+
+.input:hover {
+  border: 1px solid var(--blue-5);
+}
+
+.input:focus {
+  border: 1px solid var(--blue-6);
+  box-shadow: 0px 0px 4px rgba(24, 144, 255, 0.5);
+}
+
+.input-sm {
+  padding: 1px 8px 1px 28px;
+}
+
+.input-md {
+  padding: 5px 12px 5px 32px;
+}
+
+.input-lg {
+  padding: 8px 12px 8px 34px;
+}
+
+.input-disabled {
+  cursor: not-allowed;
+  color: var(--gray-6);
+  background-color: var(--gray-3);
+}
+
+.input-disabled:hover {
+  border-color: var(--gray-5);
+  box-shadow: none;
+}
+
+/* button */
+.btn {
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+/* button size */
+.btn-sm {
+  padding: 1px 8px;
+}
+
+.btn-md {
+  padding: 5px 16px;
+}
+
+.btn-lg {
+  padding: 8px 16px;
+}
+
+/* button primary */
+.btn-primary:hover {
+  background-color: var(--blue-5);
+}
+
+.btn-primary:active {
+  background-color: var(--blue-7);
+}
+
+/* button disabled */
+.btn-disabled {
+  cursor: not-allowed;
+  color: var(--gray-6);
+  background-color: var(--gray-3);
+  border: 1px solid var(--gray-5);
+}
+
+.btn-disabled:hover {
+  color: var(--gray-6);
+  background-color: var(--gray-3);
+}
+
+.btn-loading {
+  opacity: 0.65;
+}
+
+.loader {
+  width: 16px;
+  height: 16px;
+  border: 2px solid transparent;
+  border-top: 2px solid;
+  border-radius: 50%;
+  margin-right: 5px;
+  animation: spin 2s linear infinite;
+}
+
+.btn-loading > .loader {
+  display: block;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
