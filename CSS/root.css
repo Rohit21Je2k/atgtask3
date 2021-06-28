@@ -36,6 +36,7 @@ html {
   margin: 0;
   padding: 0;
   border: 0;
+  outline: none;
   box-sizing: inherit;
 }
 
@@ -204,9 +205,6 @@ body {
 }
 
 /* input */
-.input {
-  outline: none;
-}
 
 .input::placeholder {
   color: var(--gray-7);
