@@ -144,6 +144,14 @@ body {
   border: 1px dashed var(--gray-5);
 }
 
+.b-g-1 {
+  border-color: var(--gray-9);
+}
+
+.b-b-6 {
+  border-color: var(--blue-6);
+}
+
 /* colors */
 .c-g-1 {
   color: var(--gray-1);
@@ -185,6 +193,14 @@ body {
 
 .fnt-16 {
   font-size: 16px;
+}
+
+.fnt-18 {
+  font-size: 18px;
+}
+
+.fnt-24 {
+  font-size: 24px;
 }
 
 /* input */
@@ -281,6 +297,18 @@ body {
   border-radius: 50%;
   margin-right: 5px;
   animation: spin 2s linear infinite;
+}
+
+.loader-g-1 {
+  border-top-color: var(--gray-1);
+}
+
+.loader-g-9 {
+  border-top-color: var(--gray-9);
+}
+
+.loader-b-6 {
+  border-top-color: var(--blue-6);
 }
 
 .btn-loading > .loader {

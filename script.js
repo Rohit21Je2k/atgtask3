@@ -14,10 +14,8 @@ form.onsubmit = (e) => {
       btn.classList.add("btn-disabled");
 
       //   display submission
-      const section = document.querySelector("section");
-      const element = document.createElement("div");
-      element.innerHTML = `<h3 class="mt-50 wgt-500 fnt-16 c-g-9">Form submitted: ${text}</h3>`;
-      section.appendChild(element);
+      const h1 = document.querySelector("h1");
+      h1.innerHTML = `Form submitted: ${text}`;
     }, 2000);
   }
 };
